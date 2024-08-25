@@ -10,18 +10,34 @@ This guide assume that docker is running on host machine.
 
 HTTP request to front-end container will be forwarded to two back-end containers in round-robin load balancing scenario.
 
+```shell
+curl http://localhost/
+```
+
 Back-end Apache httpd server can also be accessed by browser on port 80 
 
 For container 1:
 
 ```shell
-curl http://localhost/prod1/
+curl http://localhost/web1/
+```
+
+or
+
+```shell
+curl http://172.19.0.3:8080/
 ```
 
 For container 2:
 
 ```shell
-curl http://localhost/prod2/
+curl http://localhost/web2/
+```
+
+or
+
+```shell
+curl http://172.19.0.4:8080/
 ```
 
 ## Starting containers
