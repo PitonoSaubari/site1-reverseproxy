@@ -25,6 +25,12 @@ curl http://localhost/web1/
 or
 
 ```shell
+curl http://localhost:8081/
+```
+
+or
+
+```shell
 curl http://172.19.0.3:8080/
 ```
 
@@ -32,6 +38,12 @@ For container 2:
 
 ```shell
 curl http://localhost/web2/
+```
+
+or
+
+```shell
+curl http://localhost:8082/
 ```
 
 or
@@ -84,3 +96,6 @@ Service: NGINX
 Bridge IP address: 172.19.0.2  
 Port: 80
 
+## Note
+
+This site is deployed on AWS EC2 running Amazon Linux 2023.

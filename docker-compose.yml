@@ -2,6 +2,8 @@ services:
   web1:
     container_name: web1
     image: web1
+    ports:
+      - "8081:8080"
     build:
       context: web1
     networks:
@@ -10,6 +12,8 @@ services:
   web2:
     container_name: web2
     image: web2
+    ports:
+      - "8082:8080"
     build:
       context: web2
     networks:
