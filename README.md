@@ -15,13 +15,13 @@ Back-end Apache httpd server can also be accessed by browser on port 80
 For container 1:
 
 ```shell
-http://{IP address}/prod1 
+curl http://localhost/prod1/
 ```
 
 For container 2:
 
 ```shell
-http://{IP address}/prod2
+curl http://localhost/prod2/
 ```
 
 ## Starting containers
@@ -33,6 +33,10 @@ docker-compose up -d
 ```
 
 The site can be accessed by browser on port 80. 
+
+```shell
+curl http://localhost/
+```
 
 ## Stopping containers
 
